@@ -100,7 +100,7 @@ main {
 
 .main-visual2 {
   position: relative;
-  /* background-color: green; */
+  background-color: green;
   background-image: url(img/アセット\ 542.png);
   width: 100%;
 }
@@ -450,6 +450,8 @@ main {
 .main-visual5 {
   text-align: center;
   background-color: #cde7f5;
+  background-image:url('img/アセット\ 500.png');
+  background-size: 100% 100%
 }
 
 .image9 {
@@ -530,14 +532,16 @@ main {
   margin: 2.5vw 18.5vw;
   padding: 3vw 2.5vw;
   border-radius: 0.8vw;
-  gap: 2vw;
+  gap: 1.5vw;
 }
 
 .mv5-box {
+  position: relative;
   background-color: #f0f0f0;
-  width: 13vw;
-  border-bottom-left-radius: 0.8vw;
-  border-bottom-right-radius: 0.8vw;
+  width: 13.5vw;
+  height: 17.5vw;
+  border-bottom-left-radius: 0.6vw;
+  border-bottom-right-radius: 0.6vw;
 }
 
 .before {
@@ -555,36 +559,41 @@ main {
   text-align: left;
   font-size: 0.9vw;
   font-weight: bold;
+  margin-bottom: 2.3vw;
 }
 
 .rating-average {
-  height: 80px;
+  position: absolute;
+  bottom: 10%;
+  left: 6%;
+  width: 12vw;
+  height: 5vw;
   background-color: white;
-  margin: 30px 15px 0;
-  padding-top: 15px;
+  padding-top: 1vw;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border-radius: 0.4vw;
 }
 
 .rating-average-title {
   color: #103b6b;
-  font-size: 14px;
+  font-size: 1vw;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.4vw;
 }
 
 .image10 {
-  width: 130px;
+  width: 8vw;
   height: auto;
+  margin-bottom: 0.4vw;
 }
 
 .image11 {
   position: absolute;
   width: 4.5vw;
   height: auto;
-  top: 30%;
-  left: 23%;
+  top: 35%;
+  left: -23%;
 }
 
 .after {
@@ -625,72 +634,243 @@ main {
 }
  
 .mv5-content {
-  margin: 0 10px 10px 10px;
+  /* background-color: blue; */
+  margin: 0;
   text-align: left;
 }
 
 .mv5-content-box {
   /* background-color: red; */
-  width: 400px;
-  height: 110px;
+  width: 25vw;
 }
 
 .achievement-data-title {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 0.2vw;
   color: #103b6b;
-  font-size: 17px;
+  font-size: 1.3vw;
   font-weight: bold;
   border-bottom: 1px solid #103b6b;
-  text-indent: 10px;
+  text-indent: 1vw;
   letter-spacing: 0.1em;
 }
 
 .achievement-data-text {
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-size: 14px;
+  margin: 0.5vw 0;
+  font-size: 0.9vw;
 }
 
 .last-year-comparison {
   margin: 0;
-  font-size: 10px;
+  font-size: 0.6vw;
 }
 
 .deleted-review-title {
+  margin-top: 1.5vw;
   margin-bottom: 0;
-  padding-bottom: 5px;
+  padding-bottom: 0.2vw;
   color: #103b6b;
-  font-size: 17px;
+  font-size: 1.3vw;
   font-weight: bold;
   border-bottom: 1px solid #103b6b;
-  text-indent: 10px;
+  text-indent: 1vw;
   letter-spacing: 0.1em;
 }
 
 .deleted-review-box {
+  /* background-color: green; */
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.2vw;
+  margin-bottom: 0.5vw;
   padding-bottom: 0;
 }
 
-.deleted-review-box {
-  display: flex;
-}
-
 .image13 {
-  width: 20px;
-  height: 20px;
+  width: 1.3vw;
+  margin-top: 0.8vw;
 }
 
 .deleted-review-text {
-  font-size: 14px;
+  font-size: 0.9vw;
   margin-bottom: 0;
 }
 
 .image14 {
-  width: 450px;
+  width: 30vw;
   height: auto;
-  margin-top: 50px;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+/* -----------------main-visual6------------- */
+
+.main-visual6 {
+  background-image: url(img/アセット\ 161.png);
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.image15 {
+  width: 5.5vw;
+  margin-top: 5vw;
+}
+
+.mv6-title {
+  color: white;
+  font-size: 2.5vw;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+.mv6-highlight {
+  color: #fbe800;
+  font-size: 3.5vw;
+}
+
+.mv6-yellow {
+  color: #fbe800;
+}
+
+.mv6-container {
+  display: flex;
+  margin: 0 auto;
+  gap: 1vw;
+  justify-content: center;
+}
+
+.mv6-box {
+  position: relative;
+  background-color: white;
+  width: 14vw;
+  height: 22vw;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mv6-box-top {
+  position: relative;
+  width: 100%;
+  height: 10vw;
+  margin: 0;
+}
+
+.mv6-num {
+  position: absolute;
+  color: #103b6b;
+  font-size: 2.5vw;
+  margin: 0;
+  top: -5%;
+  left: 5%;
+}
+
+.mv6-box-img {
+  position: absolute;
+  width: 13vw;
+  height: 9vw;
+  top: 10%;
+  right: 4%;
+  z-index: 5;
+}
+
+.mv6-box-img1 {
+  position: absolute;
+  width: 9vw;
+  top: 35%;
+  left: 20%;
+  z-index: 10;
+}
+
+.mv6-box-img2 {
+  position: absolute;
+  width: 4.5vw;
+  top: 25%;
+  left: 40%;
+  z-index: 10;
+}
+
+.mv6-box-img3 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  top: 15%;
+  left: 40%;
+  z-index: 10;
+}
+
+.mv6-box-img4 {
+  position: absolute;
+  width: 9vw;
+  height: auto;
+  top: 35%;
+  left: 20%;
+  z-index: 10;
+}
+
+.mv6-box-title {
+  color: #103b6b;
+  font-size: 1.3vw;
+  margin-top: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.mv6-box-text {
+  font-size: 1vw;
+  margin: 0 1.5vw;
+  text-align: left;
+}
+
+.mv6-box-bottom {
+  position: absolute;
+  display: flex;
+  width: 80%;
+  height: 2vw;
+  bottom: 3%;
+  left: 10%;
+}
+
+.time-required {
+  background-color: #103b6b;
+  color: white;
+  width: 8vw;
+  font-size: 0.8vw;
+  margin: 0;
+  padding: 0.3vw;
+}
+
+.time {
+  background-color: #cde7f5;
+  width: 100%;
+  font-size: 0.8vw;
+  margin: 0;
+  padding: 0.3vw;
+}
+
+.image16 {
+  width: 25vw;
+  margin: 2vw auto;
+}
+
+/* -----------------main-visual7------------- */
+
+.main-visual7 {
+  background-color: white;
+  text-align: center;
+  padding: 8vw 19vw 0;
+}
+
+.mv7-content1 {
+  position: relative;
+  background-color: #cde7f5;
+  /* margin: 8vw; */
+}
+
+.image17 {
+  position: absolute;
+  width: 5vw;
+  height: auto;
+  top: 0;
+}
+
+.mv7-title {
+  margin: 0;
 }
