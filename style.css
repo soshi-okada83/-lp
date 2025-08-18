@@ -706,8 +706,11 @@ main {
 /* -----------------main-visual6------------- */
 
 .main-visual6 {
-  background-image: url(img/アセット\ 161.png);
-  background-size: 100% 100%;
+  background-color: #3c82cf;
+  background-image: url(img/アセット\ 7@4x.png);
+  background-size: cover;
+  background-position: center -15vw;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -854,23 +857,279 @@ main {
 
 .main-visual7 {
   background-color: white;
+  background-image: url(img/アセット\ 6@4x.png);
+  background-size: 100vw auto;
+  background-position: center 45vw;
+  background-repeat: no-repeat;
+  height: 80vw;
   text-align: center;
-  padding: 8vw 19vw 0;
+  padding: 7.5vw 19vw 0;
 }
 
 .mv7-content1 {
   position: relative;
   background-color: #cde7f5;
-  /* margin: 8vw; */
+  border-radius: 1.5vw;
 }
 
 .image17 {
   position: absolute;
-  width: 5vw;
+  width: 5.5vw;
   height: auto;
-  top: 0;
+  top: -2.5vw;
+  left: 27vw;
 }
 
-.mv7-title {
+.mv7-title1 {
   margin: 0;
+  padding-top: 4vw;
+  color: #103b6b;
+  font-size: 2.5vw;
+}
+
+.mv7-blue {
+  color: #008dc7;
+  font-size: 3vw;
+}
+
+.mv7-container {
+  width: 55vw;
+  height: 33.5vw;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mv7-top {
+  display: flex;
+  justify-content: center;
+  height: 15vw;
+  gap: 2vw;
+}
+
+.mv7-top-box {
+  position: relative;
+  background-color: white;
+  width: 30vw;
+  margin-top: 3vw;
+  border-radius: 0.5vw;
+}
+
+.mv7-bottom-box {
+  position: relative;
+  background-color: white;
+  border-radius: 0.5vw;
+  width: 25vw;
+  height: 12.5vw;
+  margin: 3vw auto;
+}
+
+.mv7-plan1 {
+  position: absolute;
+  background-color: #103b6b;
+  width: 19vw;
+  height: 3.5vw;
+  top: -3.2vw;
+  left: 3.5vw;
+  color: white;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+}
+
+.mv7-plan2 {
+  position: absolute;
+  background-color: #103b6b;
+  width: 19vw;
+  height: 3.5vw;
+  top: -3vw;
+  left: 3vw;
+  color: white;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2vw;
+}
+
+.mv7-yellow {
+  color: #fbe800;
+}
+
+.mv7-price {
+  color: #f36a3e;
+  font-size: 2.3vw;
+  font-weight: bold;
+  margin: 2.5vw auto 0;
+}
+
+.tax {
+  color: #103b6b;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.mv7-box-text {
+  font-size: 1vw;
+  margin: 1vw auto 0.5vw;
+}
+
+.mv7-note {
+  font-size: 0.8vw;
+  margin: 0;
+}
+
+.mv7-estimate {
+  color: #f36a3e;
+  font-size: 2vw;
+  font-weight: bold;
+  padding-top: 3.5vw;
+  margin: 0;
+}
+
+.image18 {
+  width: 6vw;
+  height: auto;
+  margin-top: 5.5vw;
+}
+
+.mv7-title2 {
+  margin: 0;
+  color: #103b6b;
+  font-size: 2.5vw;
+}
+
+.mv7-content2 {
+  display: flex;
+  height:15vw;
+  padding-top: 3vw;
+  gap: 1.5vw;
+}
+
+.mv7-box2 {
+  position: relative;
+  width: 20vw;
+  border: 0.3vw solid #103b6b;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.image19 {
+  position: absolute;
+  width: 4.5vw;
+  height: auto;
+  top: -2.5vw;
+  left: 7vw;
+}
+
+.mv7-name {
+  color: #103b6b;
+  font-size: 1.3vw;
+  padding-top: 1.7vw;
+}
+
+.mv7-box2-text {
+  text-align: left;
+  font-size: 0.9vw;
+  margin: 1.5vw 1vw;
+  letter-spacing: 0.05vw;
+  line-height: 1.5vw;
+}
+
+.mv7-red {
+  color: #f36a3e;
+}
+
+/* -----------------main-visual8------------- */
+
+.main-visual8 {
+  position: relative;
+  background-color: #e2f1f8;
+  text-align: center;
+  height: 55vw;
+  z-index: 0;
+}
+
+.main-visual8::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #cde7f5;
+  clip-path: polygon(0 65%, 100% 35%, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+.image20 {
+  width: 5.5vw;
+  height: auto;
+  margin-top: 4vw;
+}
+
+.mv8-title {
+  color: #103b6b;
+  font-size: 3vw;
+  margin: 0;
+  letter-spacing: -0.1vw;
+}
+
+.mv8-blue {
+  color: #008dc7;
+}
+
+.faq-container {
+  width: 55%;
+  max-width: 700px;
+  margin: 3vw auto;
+  font-family: sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 1vw;
+  overflow: hidden;
+  background-color: #103b6b;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  padding: 0 1vw;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-icon {
+  width: 3vw;
+  height: auto;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.faq-text {
+  flex: 1;
+  text-align: left;
+  font-size: 1vw;
+  font-weight: bold;
+  color: white;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+summary .faq-toggle::before {
+  content: "+";
+}
+
+details[open] summary .faq-toggle::before {
+  content: "−";
+}
+
+.faq-answer {
+  padding: 1.5vw 5.5vw;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 0.9vw;
+  text-align: left;
 }
