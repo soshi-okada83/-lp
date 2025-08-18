@@ -1082,7 +1082,7 @@ main {
 }
 
 .faq-container {
-  background-color: red;
+  /* background-color: red; */
   width: 55vw;
   margin: 3vw auto;
   font-family: sans-serif;
