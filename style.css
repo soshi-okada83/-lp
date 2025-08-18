@@ -527,7 +527,7 @@ main {
 
 .mv5-container {
   display: flex;
-  display: none; /*追加*/
+  display: none;
   position: relative;
   background-color: white;
   margin: 2.5vw 18.5vw;
@@ -536,7 +536,7 @@ main {
   gap: 1.5vw;
 }
 
-.mv5-container.active { /*追加*/
+.mv5-container.active {
   display: flex;
 }
 
@@ -639,13 +639,11 @@ main {
 }
  
 .mv5-content {
-  /* background-color: blue; */
   margin: 0;
   text-align: left;
 }
 
 .mv5-content-box {
-  /* background-color: red; */
   width: 25vw;
 }
 
@@ -683,17 +681,29 @@ main {
 }
 
 .deleted-review-box {
-  /* background-color: green; */
   display: flex;
   align-items: center;
   gap: 0.2vw;
-  margin-bottom: 0.5vw;
+  margin-bottom: 1.15vw;
+  padding-bottom: 0;
+}
+
+.deleted-review-box1 {
+  display: flex;
+  align-items: center;
+  gap: 0.2vw;
+  margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .image13 {
   width: 1.3vw;
-  margin-top: 0.8vw;
+  margin-top: 1.2vw;
+}
+
+.image13-1 {
+  width: 1.3vw;
+  margin-top: 0;
 }
 
 .deleted-review-text {
@@ -1082,14 +1092,13 @@ main {
 }
 
 .faq-container {
-  /* background-color: red; */
   width: 55vw;
   margin: 3vw auto;
   font-family: sans-serif;
 }
 
 .faq-item {
-  /* height: 6vw; */
+  min-height: 5vw;
   margin-bottom: 1vw;
   overflow: hidden;
   background-color: #103b6b;
@@ -1098,6 +1107,7 @@ main {
 summary {
   display: flex;
   align-items: center;
+  height: 5vw;
   padding: 0 1vw;
   cursor: pointer;
   list-style: none;
@@ -1133,6 +1143,7 @@ details[open] summary .faq-toggle::before {
 }
 
 .faq-answer {
+  height: 3vw;
   padding: 1.5vw 5.5vw;
   border-top: 1px solid #ccc;
   background-color: #fff;

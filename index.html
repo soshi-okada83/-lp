@@ -213,8 +213,8 @@
       </p>
 
       <div class="mv5-category">
-        <div class="mv5-bubble" data-category="飲食店">
-            <p class="mv5-bubble-title">飲食店</p>
+        <div class="mv5-bubble mv5-bubble-highlight" data-category="飲食店">
+            <p class="mv5-bubble-title mv5-white">飲食店</p>
         </div>
 
         <div class="mv5-bubble" data-category="美容クリニック">
@@ -284,6 +284,7 @@
                 <img src="img/アセット 466.png" alt="/" class="image13">
                 <p class="deleted-review-text">
                   「この店、本当に最悪。味も接客も0点。行く価値なし。」
+                  <br><br>
                 </p>
               </div>
             </div>
@@ -447,8 +448,8 @@
                 </p>
               </div>
 
-              <div class="deleted-review-box">
-                <img src="img/アセット 466.png" alt="/" class="image13">
+              <div class="deleted-review-box1">
+                <img src="img/アセット 466.png" alt="/" class="image13-1">
                 <p class="deleted-review-text">
                   「購入した雑貨がすぐに壊れました。<br>
                   初期不良かと思って問い合わせたのに、<br>
@@ -775,11 +776,19 @@
     const bubbles = document.querySelectorAll(".mv5-bubble");
     const containers = document.querySelectorAll(".mv5-container");
 
+    const defaultCategory = "飲食店";
+    containers.forEach(container => {
+      if (container.getAttribute("data-category") === defaultCategory) {
+        container.classList.add("active");
+      } else {
+        container.classList.remove("active");
+      }
+    });
+
     bubbles.forEach(bubble => {
       bubble.addEventListener("click", () => {
         const selectedCategory = bubble.getAttribute("data-category");
 
-        // 1. バブルの見た目を切り替える
         bubbles.forEach(b => {
           b.classList.remove("mv5-bubble-highlight");
           b.classList.add("mv5-bubble");
@@ -791,7 +800,6 @@
         const title = bubble.querySelector('.mv5-bubble-title');
         if (title) title.classList.add('mv5-white');
 
-        // 2. 業種の中身（mv5-container）切り替え
         containers.forEach(container => {
           if (container.getAttribute("data-category") === selectedCategory) {
             container.classList.add("active");
