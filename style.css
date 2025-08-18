@@ -1082,13 +1082,14 @@ main {
 }
 
 .faq-container {
-  width: 55%;
-  max-width: 700px;
+  background-color: red;
+  width: 55vw;
   margin: 3vw auto;
   font-family: sans-serif;
 }
 
 .faq-item {
+  /* height: 6vw; */
   margin-bottom: 1vw;
   overflow: hidden;
   background-color: #103b6b;
