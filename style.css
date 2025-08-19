@@ -66,18 +66,10 @@ header {
   margin-left: 5px;
 }
 
-/* ------------------main-------------------- */
-
-main {
-  background-color: blue;
-  height: 6000px;
-}
-
 /* -----------------main-visual1------------- */
 
 .main-visual1 {
   position: relative;
-  background-color: red;
   width: 100%;
   aspect-ratio: 1906.4/804.68;
 }
@@ -100,19 +92,22 @@ main {
 
 .main-visual2 {
   position: relative;
-  background-color: green;
   background-image: url(img/アセット\ 542.png);
   width: 100%;
 }
 
 .image3 {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+.image3-1 {
+  display: none;
+}
+
 .higai {
-  /* background-color: red; */
   width: 100%;
   height: auto;
   position: relative;
@@ -136,9 +131,7 @@ main {
 }
 
 .main-visual2-text {
-  /* background-color: blue; */
-  display: grid;
-  place-items: center;
+  text-align: center;
 }
 
 .warning {
@@ -167,6 +160,10 @@ main {
   font-size: 3vw;
 }
 
+.mv2-br-sp {
+  display: none;
+}
+
 .char {
   position: relative;
   display: inline-block;
@@ -183,7 +180,8 @@ main {
   font-size: 0.7em;
 }
 
-.warning-icon {
+.warning-icon1,
+.warning-icon2 {
   width: 3vw;
   height: auto;
   vertical-align: middle;
@@ -232,7 +230,6 @@ main {
 /* -----------------main-visual3------------- */
 
 .main-visual3 {
-  /* background-color: brown; */
   width: 100%;
   background-image: url(img/アセット\ 539.png);
   background-size: cover;
@@ -253,6 +250,10 @@ main {
   margin-top: 0.1vw;
 }
 
+.mv3-br-sp{
+  display: none;
+}
+
 .mv3-highlight {
   font-size: 3vw;
   color: #3698d0;
@@ -263,7 +264,6 @@ main {
 }
 
 .mv3-figure {
-  /* background-color: blue; */
   display: flex;
   flex-wrap: wrap;
   gap: 1.0vw;
@@ -271,7 +271,8 @@ main {
   margin-top: 3vw;
 }
 
-.mv3-box {
+.mv3-box,
+.mv3-box-sp-large {
   background-color: white;
   padding: 1.5vw 1vw;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -287,7 +288,7 @@ main {
 .mv3-box-title {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
-  font-size: 1.0vw;
+  font-size: 1vw;
   color: #103b6b;
   margin-bottom: 0;
   position: relative;
@@ -346,6 +347,10 @@ main {
   font-size: 2.5vw;
   color: #103b6b;
   margin-top: 0;
+}
+
+.mv4-br-sp {
+  display: none;
 }
 
 .mv4-blue {
@@ -1149,4 +1154,312 @@ details[open] summary .faq-toggle::before {
   background-color: #fff;
   font-size: 0.9vw;
   text-align: left;
+}
+
+/* -----------------メディアクエリ------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* header */
+
+.title {
+  font-size: 4vw;
+}
+
+.logo {
+  width: 7vw;
+}
+
+.inquiry {
+  width: 30vw;
+}
+
+.phone {
+  display: none;
+}
+
+.tel {
+  display: none;
+}
+
+/* main-visual1 */
+
+.main-visual1 {
+  background-image: url(img/アセット\ 22.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150vw;
+}
+
+.image1 {
+  display: none;
+}
+
+.image2 {
+  width: 105vw;
+  left: -1.5vw;
+  bottom: 1.1vw;
+}
+
+/* main-visual2 */
+
+.image3 {
+  display: none;
+}
+
+.image3-1 {
+  display: block;
+  width: 100%;
+}
+
+.higai {
+  position: relative;
+  height: 50vw;
+}
+
+.man-img {
+  display: none;
+}
+
+.woman-img {
+  z-index: 0;
+  height: 40vw;
+  bottom: 27vw;
+  right: 6vw;
+}
+
+.warning {
+  text-align: left;
+  position: relative;
+}
+
+.mv2-text1 {
+  font-size: 5vw;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.mv2-highlight {
+  font-size: 6vw;
+}
+
+.mv2-br-sp {
+  display: block;
+}
+
+.warning-icon1 {
+  display: none;
+}
+
+.warning-icon2 {
+  position: absolute;
+  width: 6vw;
+  top: 9vw;
+  left: 30vw;
+}
+
+.mv2-bubble {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 95%;
+}
+
+.mv2-text2 {
+  font-size: 5vw;
+}
+
+.image4 {
+  width: 80vw;
+}
+
+/* main-visual3 */
+
+.image5 {
+  width: 15vw;
+  margin-top: 7vw;
+}
+
+.mv3-title {
+  font-size: 6.5vw;
+  margin-top: 3vw;
+}
+
+.mv3-br-sp{
+  display: block;
+}
+
+.mv3-highlight {
+  font-size: 7.5vw;
+}
+
+.mv3-figure {
+  display: block;
+  margin: 0 5vw;
+  margin-top: 20vw;
+}
+
+.mv3-box {
+  position: relative;
+  height: 45vw;
+  margin-bottom: 15vw;
+  padding: 1.5vw 5vw;
+}
+
+.mv3-box:last-of-type {
+  margin-bottom: 0;
+}
+
+.mv3-box-sp-large {
+  position: relative;
+  height: 55vw;
+  margin-bottom: 15vw;
+  padding: 1.5vw 5vw;
+}
+
+.mv3-box-image {
+  position: absolute;
+  width: 27vw;
+  top: -10vw;
+  left: 3vw;
+}
+
+.mv3-box-title {
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 3vw;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mv3-box-text {
+  margin-top: 7vw;
+  padding: 0 4vw;
+  font-size: 4vw;
+}
+
+.mv3-box-quote {
+  font-size: 3vw;
+  margin-top: 2vw;
+  margin-left: 5vw;
+}
+
+.image6 {
+  width: 100vw;
+  margin: 5vw 0;
+}
+
+
+/* main-visual4 */
+
+.main-visual4 {
+  background-size: 7vw 7vw;
+}
+
+.image7 {
+  width: 15vw;
+  margin-top: 7vw;
+  margin-bottom: 0;
+}
+
+.mv4-title {
+  font-size: 7vw;
+  margin-top: 5vw;
+}
+
+.mv4-br-sp {
+  display: block;
+}
+
+.mv4-blue {
+  font-size: 8vw;
+}
+
+.mv4-container {
+  display: block;
+  text-align: center;
+  margin: 0;
+  margin-top: 1vw;
+}
+
+.mv4-box {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.mv4-box-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.point {
+  position: absolute;
+  top: 51%;
+  left: 8%;
+  display: inline-block;
+  padding: 0 0.5vw;
+  border: 0.1vw solid #103b6b;
+  border-radius: 4px;
+  font-size: 1.5vw;
+  font-weight: bold;
+  background-color: white;
+  color: #103b6b;
+}
+
+.point::after {
+  content: "";
+  position: absolute;
+  bottom: -0.7vw;
+  left: 1vw;
+  width: 0;
+  height: 0;
+  border-width: 0.7vw 0 0 0.7vw;
+  border-style: solid;
+  border-color: #103b6b transparent transparent transparent;
+}
+
+.large {
+  font-size: 2.5vw;
+  margin-left: 0.5vw;
+}
+
+.mv4-box-title {
+  text-align: left;
+  margin-left: 3.5vw;
+  margin-top: 1vw;
+  margin-bottom: 0;
+  color: #103b6b;
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+
+.mv4-box-text {
+  font-size: 0.9vw;
+  text-align: left;
+  margin: 0.3vw 3.5vw 0;
+}
+
+.mv4-red {
+  color: #f3531e;
+}
+
+.mv4-box-note {
+  font-size: 0.7vw;
+  text-align: left;
+  margin-top: 0;
+  margin-left: 3.5vw;
+}
+
+.image8 {
+  width: 30vw;
+  height: auto;
+  margin: 2vw 0;
+}
+
 }
