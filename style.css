@@ -96,8 +96,9 @@ header {
 
 .main-visual2 {
   position: relative;
-  background-image: url(img/アセット\ 542.png);
+  background-image: url(img/アセット\ 541@4x.png);
   width: 100%;
+  background-size: cover;
 }
 
 .image3 {
@@ -235,7 +236,7 @@ header {
 
 .main-visual3 {
   width: 100%;
-  background-image: url(img/アセット\ 539.png);
+  background-image: url(img/アセット\ 538@4x.png);
   background-size: cover;
   text-align: center;
 }
@@ -457,7 +458,7 @@ header {
 .main-visual5 {
   text-align: center;
   background-color: #cde7f5;
-  background-image:url('img/アセット\ 500.png');
+  background-image:url('img/アセット\ 499@4x.png');
   background-size: 100% 100%
 }
 
@@ -1101,6 +1102,10 @@ header {
   left: 7vw;
 }
 
+.arrow-btn {
+  display: none;
+}
+
 .mv7-name {
   color: #103b6b;
   font-size: 1.3vw;
@@ -1125,7 +1130,6 @@ header {
   position: relative;
   background-color: #e2f1f8;
   text-align: center;
-  /* height: 55vw; */
   padding-bottom: 5vw;
   z-index: 0;
 }
@@ -1249,7 +1253,7 @@ header {
 /* main-visual1 */
 
 .main-visual1 {
-  background-image: url(img/アセット\ 22.png);
+  background-image: url(img/アセット\ 21@4x.png);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1267,6 +1271,13 @@ header {
 }
 
 /* main-visual2 */
+
+.main-visual2 {
+  width: 100%;
+  background-position: center bottom;
+  background-size: 100% 66vw;
+  background-repeat: no-repeat;
+}
 
 .image3 {
   display: none;
@@ -1820,17 +1831,13 @@ header {
 /* -----------------main-visual7------------- */
 
 .main-visual7 {
-  background-image: url(img/アセット\ 6@4x.png);
-  background-size: 100vw auto;
-  background-position: center 45vw;
-  background-repeat: no-repeat;
   height: auto;
-  padding: 20vw 0;
+  padding: 20vw 0 10vw;
 }
 
 .mv7-content1 {
   width: 90%;
-  border-radius: 2vw;
+  border-radius: 5vw;
   margin: 0 auto;
   padding-bottom: 10vw;
 }
@@ -1842,8 +1849,8 @@ header {
 }
 
 .mv7-title1 {
-  padding-top: 12vw;
   font-size: 6.5vw;
+  padding-top: 12vw;
 }
 
 .mv7-br-sp {
@@ -1887,7 +1894,6 @@ header {
   font-size: 5vw;
 }
 .mv7-price {
-  color: #f3480b;
   font-size: 10vw;
   padding-top: 8vw;
 }
@@ -1903,65 +1909,120 @@ header {
 
 .mv7-note {
   font-size: 3vw;
-  margin: 0;
 }
 
 .mv7-estimate {
-  color: #f3480b;
   font-size: 8vw;
   padding-top: 8vw;
 }
 
 .image18 {
-  width: 6vw;
-  height: auto;
-  margin-top: 5.5vw;
+  width: 15vw;
+  margin-top: 7.5vw;
 }
 
 .mv7-title2 {
-  margin: 0;
-  color: #103b6b;
-  font-size: 2.5vw;
+  margin-top: 5vw;
+  font-size: 6.5vw;
 }
 
 .mv7-content2 {
-  display: flex;
-  height:15vw;
-  padding-top: 3vw;
-  gap: 1.5vw;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  position: relative;
 }
 
 .mv7-box2 {
-  position: relative;
-  width: 20vw;
-  border: 0.3vw solid #103b6b;
-  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 60vw;
+  margin-top: 15vw;
+  border: 0.7vw solid #103b6b;
+  display: none;
+  box-shadow: 10px 10px 3px rgba(40, 47, 74, 0.837);
+}
+
+.mv7-box2.active {
+  display: block;
+}
+
+.arrow-btn {
+  position: absolute;
+  display: block;
+  top: 37%;
+  width: 7vw;
+  height: 7vw;  
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-btn::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrow-btn:hover {
+  filter: brightness(1.2);
+}
+
+.arrow-left {
+  left: 9%;
+}
+
+.arrow-left::before {
+  border-width: 2.5vw 4vw 2.5vw 0;
+  border-color: transparent #103b6b transparent transparent;
+}
+
+.arrow-right {
+  right: 9%;
+}
+
+.arrow-right::before {
+  border-width: 2.5vw 0 2.5vw 4vw;
+  border-color: transparent transparent transparent #103b6b;
 }
 
 .image19 {
-  position: absolute;
-  width: 4.5vw;
-  height: auto;
-  top: -2.5vw;
-  left: 7vw;
+  width: 20vw;
+  top: -10vw;
+  left: 34vw;
 }
 
 .mv7-name {
-  color: #103b6b;
-  font-size: 1.3vw;
-  padding-top: 1.7vw;
+  text-align: center;
+  font-size: 6vw;
+  padding-top: 6.5vw;
 }
 
 .mv7-box2-text {
-  text-align: left;
-  font-size: 0.9vw;
-  margin: 1.5vw 1vw;
-  letter-spacing: 0.05vw;
-  line-height: 1.5vw;
+  font-size: 4vw;
+  padding: 0 7vw;
+  line-height: 7vw;
 }
 
-.mv7-red {
-  color: #f36a3e;
+.indicator-container {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  margin-top: 5vw;
+}
+
+  .indicator-dot {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #a0b4cc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.indicator-dot.active {
+  background-color: #103b6b;
 }
 
 }
